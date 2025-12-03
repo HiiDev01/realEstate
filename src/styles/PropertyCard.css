@@ -1,0 +1,95 @@
+.property-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+}
+.property-card a{
+  text-decoration: none;
+}
+.property-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.badge {
+  background: #7a003c;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge.green {
+  background: #0cae51;
+}
+
+.property-content {
+  padding: 18px;
+}
+
+.property-content h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.price-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.new-price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #7a003c;
+}
+
+.view-icon {
+  margin-top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}

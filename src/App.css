@@ -1,0 +1,35 @@
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 35px !important;
+  z-index: 9999 !important;
+  top: auto !important;
+  padding: 40px !important;
+  width: 50px !important;      /* button width */
+  height: 50px !important;
+}
+.slick-prev {
+  left: 5% !important;
+  color: transparent !important;
+}
+
+.slick-next {
+  right: 18% !important;
+  color: transparent !important;
+}
+.slick-prev,
+.slick-next {
+  top: 50% !important;
+  transform: translateY(-50%);
+  z-index: 9999 !important;
+  font-size: 40px !important;
+
+}
+.slick-arrow{
+  font-size: 3rem !important;
+}
+.slick-prev::before,
+.slick-next::before{
+  font-size: 100px !important;
+  color: white !important;
+}

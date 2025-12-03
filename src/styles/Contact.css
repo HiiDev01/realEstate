@@ -1,0 +1,175 @@
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ----- HERO SECTION ----- */
+.he-section {
+  height: 50vh;
+  background-image: url('../assets/bg3.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 30px 50px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.hero-overlay h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+}
+
+.hero-overlay p {
+  color: #e8e8e8;
+  margin-top: 8px;
+}
+
+/* ----- CONTACT SECTION ----- */
+.contact-box {
+  width: 90%;
+  background: #fff;
+  margin: -60px auto 0 auto;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+}
+.left-contact{
+  background-color: #005de8;
+  padding: 40px;
+}
+
+.left-contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.left-contact p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-item .icon {
+  font-size: 30px;
+  color: #005de8;
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-item p {
+  margin: 3px 0 0;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* ----- SOCIALS ----- */
+.socials h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 24px;
+  color: #005de8;
+}
+
+/* ----- FORM ----- */
+.contact-form{
+  padding: 40px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.25s;
+  margin: 0px 0px 25px 0px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #005de8;
+}
+
+.contact-form textarea {
+  height: 140px;
+  resize: none;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: #005de8;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.contact-form button:hover {
+  background: #0046b4;
+}
+
+/* ----- MAP SECTION ----- */
+.map-section {
+  width: 100%;
+  margin: 40px auto 0px auto;
+  overflow: hidden;
+}
+
+.map-frame {
+  width: 100%;
+  height: 380px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 28px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-box {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,74 @@
+/* ContactAgent.css */
+
+.contact-agent-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-agent-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #222;
+}
+
+.success-msg {
+  text-align: center;
+  color: green;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.contact-agent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-agent-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  color: #555;
+}
+
+.contact-agent-form input,
+.contact-agent-form textarea {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.contact-agent-form input:focus,
+.contact-agent-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contact-agent-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-agent-form button {
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact-agent-form button:hover {
+  background-color: #0056b3;
+}

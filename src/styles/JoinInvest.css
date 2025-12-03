@@ -1,0 +1,65 @@
+.joininvest-section {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 3% 3%;
+  position: relative;
+}
+
+.joininvest-wrapper {
+  width: 100%;
+  padding: 2%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.joininvest-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: rgba(107, 23, 74, 0.65);  /* deep wine purple with transparency */
+  border-radius: 18px;
+  padding: 20px;
+  color: white;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.joininvest-icon {
+  background: rgba(255, 255, 255, 0.15);
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.joininvest-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font-one);
+}
+
+.joininvest-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 1.4;
+  font-family: var(--font-two);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .joininvest-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .joininvest-card {
+    width: 90%;
+  }
+}

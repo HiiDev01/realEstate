@@ -1,0 +1,186 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "title": "Modern 4-Bedroom Duplex",
+      "description": "A luxurious duplex with contemporary design, located in a serene estate with 24/7 security.",
+      "price": 85000000,
+      "location": "Lekki Phase 1, Lagos",
+      "type": "Duplex",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area": 3200,
+      "status": "For Sale",
+      "agentId": 1,
+      "images": [
+        "/images/duplex1-1.jpg",
+        "/images/duplex1-2.jpg",
+        "/images/duplex1-3.jpg"
+      ],
+      "amenities": [
+        "Parking Space",
+        "Swimming Pool",
+        "Security",
+        "Air Conditioning"
+      ],
+      "rating": 4.8,
+      "listedDate": "2025-01-10",
+      "vid": "/vd3.mp4"
+    },
+    {
+      "id": 2,
+      "title": "Luxury 3-Bedroom Apartment",
+      "description": "A fully furnished apartment with ocean view and modern facilities.",
+      "price": 45000000,
+      "location": "Victoria Island, Lagos",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 2100,
+      "status": "For Rent",
+      "agentId": 2,
+      "images": [
+        "/images/apartment1-1.jpg",
+        "/images/apartment1-2.jpg"
+      ],
+      "amenities": [
+        "Gym",
+        "Elevator",
+        "24/7 Power",
+        "Smart Home Features"
+      ],
+      "rating": 4.6,
+      "listedDate": "2025-01-18",
+      "vid": "/vd2.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Affordable Mini Flat",
+      "description": "A neat mini flat ideal for young professionals.",
+      "price": 1200000,
+      "location": "Yaba, Lagos",
+      "type": "Mini Flat",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "area": 850,
+      "status": "For Rent",
+      "agentId": 3,
+      "images": [
+        "/images/miniflat1-1.jpg"
+      ],
+      "amenities": [
+        "Water Supply",
+        "Kitchen Cabinet",
+        "Wardrobe"
+      ],
+      "rating": 4.0,
+      "listedDate": "2025-02-01",
+      "vid": "/vd4.mp4"
+    },
+    {
+      "id": 4,
+      "title": "Modern 4-Bedroom Duplex",
+      "description": "A luxurious duplex with contemporary design, located in a serene estate with 24/7 security.",
+      "price": 85000000,
+      "location": "Lekki Phase 1, Lagos",
+      "type": "Duplex",
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area": 3200,
+      "status": "For Sale",
+      "agentId": 1,
+      "images": [
+        "/images/duplex1-1.jpg",
+        "/images/duplex1-2.jpg",
+        "/images/duplex1-3.jpg"
+      ],
+      "amenities": [
+        "Parking Space",
+        "Swimming Pool",
+        "Security",
+        "Air Conditioning"
+      ],
+      "rating": 4.8,
+      "listedDate": "2025-01-10",
+      "vid": "/vd3.mp4"
+    },
+    {
+      "id": 5,
+      "title": "Luxury 3-Bedroom Apartment",
+      "description": "A fully furnished apartment with ocean view and modern facilities.",
+      "price": 45000000,
+      "location": "Victoria Island, Lagos",
+      "type": "Apartment",
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "area": 2100,
+      "status": "For Rent",
+      "agentId": 2,
+      "images": [
+        "/images/apartment1-1.jpg",
+        "/images/apartment1-2.jpg"
+      ],
+      "amenities": [
+        "Gym",
+        "Elevator",
+        "24/7 Power",
+        "Smart Home Features"
+      ],
+      "rating": 4.6,
+      "listedDate": "2025-01-18",
+      "vid": "/vd2.mp4"
+    }
+  ],
+
+  "agents": [
+    {
+      "id": 1,
+      "name": "Adeolu Real Estate Agency",
+      "phone": "+2348012345678",
+      "email": "contact@adeolurealestate.com",
+      "profileImage": "/images/agent1.jpg",
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "name": "Prime Homes Nigeria",
+      "phone": "+2348098765432",
+      "email": "support@primehomes.com",
+      "profileImage": "/images/agent2.jpg",
+      "rating": 4.7
+    },
+    {
+      "id": 3,
+      "name": "Urban Living Realtors",
+      "phone": "+2348088882222",
+      "email": "info@urbanliving.com",
+      "profileImage": "/images/agent3.jpg",
+      "rating": 4.4
+    }
+  ],
+
+  "categories": [
+    { "id": 1, "name": "Apartment" },
+    { "id": 2, "name": "Duplex" },
+    { "id": 3, "name": "Bungalow" },
+    { "id": 4, "name": "Mini Flat" },
+    { "id": 5, "name": "Office Space" }
+  ],
+
+  "reviews": [
+    {
+      "id": 1,
+      "propertyId": 1,
+      "name": "Chinedu Obi",
+      "comment": "Beautiful home, well-maintained, and the agent was professional.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "propertyId": 2,
+      "name": "Sarah Ade",
+      "comment": "Amazing view! Slightly pricey but worth it.",
+      "rating": 4
+    }
+  ]
+}

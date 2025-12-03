@@ -1,0 +1,131 @@
+.categories-section {
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.categories-title {
+  font-size: 32px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+/* GRID LAYOUT */
+.categories-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 220px;
+  gap: 20px;
+}
+
+/* CARD WRAPPER */
+.category-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* CARD IMAGE */
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* DARK OVERLAY */
+.category-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  transition: background 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card:hover::after {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* TEXT INFO */
+.category-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+.category-info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.category-info p {
+  margin: 3px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ---- MANUAL GRID PLACEMENT (MATCHING YOUR EXACT SOURCED SCREENSHOT) ---- */
+
+/* 1. Townhome (top left) */
+.category-card:nth-child(1) {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+/* 2. Apartment (large wide top middle) */
+.category-card:nth-child(2) {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+/* 5. Villa (tall right column) */
+.category-card:nth-child(5) {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2 !important;
+  height: 460px;
+}
+
+/* 3. Duplex (bottom left) */
+.category-card:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* 4. Mansion (bottom middle wide) */
+.category-card:nth-child(4) {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card:nth-child(5) {
+    grid-row: span 1;
+    height: 220px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 220px !important;
+  }
+}
