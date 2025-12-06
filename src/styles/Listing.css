@@ -1,8 +1,36 @@
+.listing{
+  padding:  80px 0px 5%  0px;
+}
+
 .property-list-grid {
   margin-top: 40px;
   padding: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
+}
+@media (max-width: 1200px) {
+  .property-list-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .property-list-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .property-list-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
 }

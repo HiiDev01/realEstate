@@ -13,7 +13,10 @@
 
 .featuredHeader h2 {
   font-size: 2rem;
-  color: #222;
+  font-family: var(--font-two);
+  font-weight: bolder;
+  text-transform: capitalize;
+  color: var(--text-color);
 }
 
 .available {
@@ -21,7 +24,8 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #5b004b;
+  color: var(--primary-color);
+  font-family: var(--font-two);
   font-weight: 600;
   cursor: pointer;
 }
@@ -141,10 +145,76 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
-  .featuredHeader {
-    flex-direction: column;
-    gap: 15px;
+@media (max-width: 900px) {
+  .featuredHeader h2 {
+    font-size: 1.7rem;
+  }
+
+  .propertyImg {
+    height: 180px;
+  }
+
+  .propertyBody h3 {
+    font-size: 1rem;
   }
 }
 
+/* Mobile */
+@media (max-width: 600px) {
+  .featured {
+    padding: 30px 4%;
+  }
+
+  .featuredHeader {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .featuredHeader h2 {
+    font-size: 1.6rem;
+  }
+
+  .carouselItem {
+    padding: 10px 0; /* narrow spacing */
+  }
+
+  .propertyImg {
+    height: 160px;
+  }
+
+  .propertyBody h3 {
+    font-size: 1rem;
+  }
+
+  .propertyDetails {
+    gap: 6px;
+  }
+
+  .propertyDetails span {
+    font-size: 0.85rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .propertyImg {
+    height: 140px;
+  }
+
+  .featuredHeader h2 {
+    font-size: 1.4rem;
+  }
+
+  .propertyBody {
+    padding: 14px;
+  }
+
+  .propertyDetails span {
+    font-size: 0.8rem;
+  }
+}

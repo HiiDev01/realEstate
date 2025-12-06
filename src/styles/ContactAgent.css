@@ -72,3 +72,51 @@
 .contact-agent-form button:hover {
   background-color: #0056b3;
 }
+@media (max-width: 768px) {
+  .contact-agent-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .contact-agent-container h2 {
+    font-size: 24px;
+  }
+
+  .contact-agent-form input,
+  .contact-agent-form textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .contact-agent-form button {
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .contact-agent-container {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .contact-agent-container h2 {
+    font-size: 22px;
+  }
+
+  .contact-agent-form label {
+    font-size: 13px;
+  }
+
+  .contact-agent-form input,
+  .contact-agent-form textarea {
+    font-size: 13px;
+    padding: 9px;
+  }
+
+  .contact-agent-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -51,25 +51,27 @@ const BlogPage = () => {
   const totalPages = Math.ceil(filteredBlogs.length / blogsPerPage);
 
   return (
-    <>
-      <div className="listings-wrapper">
+    <div className="blogPage">
+      <div className="BlogHero">
         <h1>Our Blog</h1>
       </div>
       <div className="blog-container">
         <div>
-          <div className="blog-left">
-            {currentBlogs.length > 0 ? (
-              currentBlogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)
-            ) : (
-              <p>No matching posts found.</p>
-            )}
-            
+          <div>
+            <div className="blog-left">
+              {currentBlogs.length > 0 ? (
+                currentBlogs.map((blog) => <BlogCard key={blog.id} blog={blog} />)
+              ) : (
+                <p>No matching posts found.</p>
+              )}
+              
+            </div>
           </div>
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={setCurrentPage}
-            />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+          />
         </div>
   
         <div className="blog-right">
@@ -84,7 +86,7 @@ const BlogPage = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

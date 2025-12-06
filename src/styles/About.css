@@ -1,6 +1,20 @@
 .about-wrapper {
   width: 100%;
-  padding: 40px 0%;
+  padding: 80px 0px 5% 0px;
+}
+.AboutHero{
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 0px 0% 0px;
+  background-color: var(--primary-color);
+}
+.AboutHero h1{
+  font-size: 3rem;
+  font-family: var(--font-two);
+  color: var(--background);
 }
 
 /* ====================== SECTION LAYOUT ====================== */
@@ -24,19 +38,25 @@
 
 .about-left p {
   margin-bottom: 20px;
-  color: #333;
-  line-height: 1.6;
+  color: var(--text-light);
+  line-height: 1.8;
+  font-family: var(--font-two);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: left;
 }
 
-.tag {
+.tagSpan{
   background: #ffc107;
   border: none;
-  padding: 6px 14px;
-  font-size: 14px;
+  padding: 10px 14px;
+  font-size: 1rem;
   border-radius: 4px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   cursor: default;
+  font-family: var(--font-two);
 }
+
 
 /* ====================== IMAGE SIDE ====================== */
 .about-right {
@@ -49,16 +69,27 @@
   border-radius: 15px;
   object-fit: cover;
 }
-
+.about-right p {
+  margin-bottom: 20px;
+  color: var(  --text-light);
+  line-height: 1.8;
+  font-family: var(--font-two);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
 /* ====================== VALUES ====================== */
 .values-list {
   padding-left: 20px;
-  color: #333;
+  color: var(--text-light);
   line-height: 1.7;
 }
 
 .values-list li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-family: var(--font-two);
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 /* ====================== MD SECTION ====================== */
@@ -92,20 +123,45 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
   font-size: 14px;
 }
+.md-tag p{
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-family: var(--font-two);
+  font-weight: bold;
+  margin: 0px 0px 5px 0px;
+}
+.md-tag span{
+  color: var(--text-light);
+  font-family: var(--font-two);
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
 
 .md-text {
   width: 50%;
 }
 
 .md-text h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-family: var(--font-two);
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.md-text p{
+  font-family: var(--font-two);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-light);
 }
 
 .md-text blockquote {
   font-style: italic;
-  margin: 20px 0;
-  color: #444;
+  margin: 30px 0;
+  color: var(--text-light);
+  font-size: 1.5rem;
 }
 
 /* Buttons */
@@ -116,17 +172,23 @@
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-two);
+  font-size: 1rem;
+  color: var();
 }
 
 .md-linkedin {
   background: #4e2a84; /* deep purple */
   color: white;
 }
-
+.md-linkedin:hover{
+  opacity: 0.8;
+}
 .md-read {
   border: 1px solid #4e2a84;
   color: #4e2a84;

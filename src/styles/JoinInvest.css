@@ -20,11 +20,11 @@
   display: flex;
   align-items: flex-start;
   gap: 15px;
-  background: rgba(107, 23, 74, 0.65);  /* deep wine purple with transparency */
+  background: var(--transparent);  /* deep wine purple with transparency */
   border-radius: 18px;
   padding: 20px;
   color: white;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
@@ -53,13 +53,48 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .joininvest-wrapper {
+    gap: 30px;
+  }
+
+  .joininvest-card {
+    max-width: 300px;
+  }
+}
+
+/* Medium screens */
+@media (max-width: 768px) {
   .joininvest-wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .joininvest-card {
     width: 90%;
+    max-width: none;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .joininvest-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .joininvest-icon {
+    margin-bottom: 10px;
+  }
+
+  .joininvest-card h3 {
+    font-size: 16px;
+  }
+
+  .joininvest-card p {
+    font-size: 13px;
   }
 }

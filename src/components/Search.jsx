@@ -26,7 +26,7 @@ const Search = () => {
         <label>Location</label>
         <input
           type="text"
-          placeholder="e.g. 'Beverly Hills'"
+          placeholder="e.g. lagos, lekki"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
         />

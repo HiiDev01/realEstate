@@ -1,33 +1,58 @@
+.blogLink{
+  text-decoration: none;
+}
 .blog-card {
   width: 100%;
-  border: 1px solid black;
+  padding:  10px;
   border-radius: 10px;
   overflow: hidden;
+  background-color: var(--background-light);
 }
-
+.blogCardImg{
+  width: 100%;
+  min-height: 250px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 .blog-img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: contain;
   border-radius: 10px;
 }
 
-.blog-meta {
+.blog-meta{
   display: flex;
   gap: 10px;
   margin-top: 10px;
-  color: #555;
+  color: var(--text-light);
   font-size: 14px;
+  padding: 0px 10px;
 }
-
+.blog-meta span{
+  font-size: 0.9rem;
+  color:  var(--text-color);
+  font-family: var(--font-one);
+  font-weight: 500;
+  text-transform: capitalize;
+}
 .blog-title {
   margin: 15px 0;
-  font-size: 26px;
+  font-size: 1.4rem;
+  color: var(--text-color);
   font-weight: bold;
+  font-family: var(--font-two);
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 0px 10px;
 }
 
-.blog-excerpt {
-  color: #444;
-  line-height: 1.5;
+.blog-para {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-family: var(--font-two);
+  font-size: 1.1rem;
+  padding: 0px 10px;
 }
 
 .blog-tags {
@@ -36,9 +61,69 @@
   margin-top: 15px;
 }
 
-.tag {
-  background: #ffe6e6;
+.gat{
+  background: var(--transparent);
   padding: 6px 14px;
   border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  font-family: var(--font-two);
   font-size: 13px;
+  font-weight: 500;
+}
+@media (max-width: 900px) {
+  .blog-title {
+    font-size: 1.3rem;
+  }
+
+  .blog-para {
+    font-size: 1rem;
+  }
+
+  .blogCardImg {
+    min-height: 220px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .blog-card {
+    padding: 8px;
+  }
+
+  .blog-title {
+    font-size: 1.15rem;
+  }
+
+  .blog-para {
+    font-size: 0.95rem;
+  }
+
+  .blog-meta span {
+    font-size: 0.8rem;
+  }
+
+  .blogCardImg {
+    min-height: 200px;
+  }
+
+  .gat {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .blog-title {
+    font-size: 1.05rem;
+  }
+
+  .blog-para {
+    font-size: 0.9rem;
+  }
+
+  .blogCardImg {
+    min-height: 180px;
+  }
 }

@@ -36,7 +36,7 @@ export default function FAQPage() {
       <div className="faq-left">
         <span className="tag">Frequently asked questions</span>
         <h1>
-          Real Estate <span className="highlight">FAQs</span>
+          UrbanHaven <span className="highlight">FAQs</span>
         </h1>
         <p>
           Find answers to the most common questions about buying, selling, or

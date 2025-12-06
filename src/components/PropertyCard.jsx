@@ -28,10 +28,10 @@ export default function PropertyCard({images,title, delete_price,current_price, 
         </p>
 
         <div className="details">
-          <span><BedDouble size={16} /> {beds} Beds</span>
-          <span><Bath size={16} /> {baths} Baths</span>
-          <span><Car size={16} /> {garage} Garage</span>
-          <span><Ruler size={16} /> {sqft} sqft</span>
+          <span><BedDouble size={18} /> {beds} Beds</span>
+          <span><Bath size={18} /> {baths} Baths</span>
+          <span><Car size={18} /> {garage} Garage</span>
+          <span><Ruler size={18} /> {sqft} sqft</span>
         </div>
 
         <div className="price-section">
@@ -40,8 +40,8 @@ export default function PropertyCard({images,title, delete_price,current_price, 
         </div>
 
         <div className="view-icon">
-          <Eye size={18} />
-          <div>
+          <Eye size={18}  style={{color: "var(--text-light)"}}/>
+          <div className="priceCon">
             <del>&#8358; {delete_price.toLocaleString()}</del>
             <h3>&#8358; {current_price.toLocaleString()}</h3>
           </div>

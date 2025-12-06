@@ -15,8 +15,8 @@
 }
 
 .pagination button:hover {
-  background: #000;
-  color: #fff;
+  background: var(--primary-color) !important;
+  color: white !important;
 }
 
 .pagination button:disabled {
@@ -25,6 +25,6 @@
 }
 
 .active-page {
-  background: #000 !important;
+  background: var(--primary-color) !important;
   color: white !important;
 }

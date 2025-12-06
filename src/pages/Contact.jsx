@@ -46,37 +46,36 @@ export default function ContactPage() {
       <section className="he-section">
         <div className="contact-overlay">
           <h1>Contact Us</h1>
-          <p>We're here to help you find your perfect property.</p>
+          <p>We're here to help you find your perfect property, one that fits your dreams and your budget.</p>
         </div>
       </section>
 
       {/* CONTACT BOX */}
       <section className="contact-box">
-
-        {/* LEFT SIDE */}
-        <div className="left-contact">
-          <h2>Get in touch</h2>
-          <p>If you have questions about buying, selling, or renting, we're ready to help.</p>
-
-          {/* DETAILS */}
-          <div className="contact-item">
-            <MapPin className="icon" />
+        <div className="contactInfoCon">
+          <div className="contactBoxItem">
+            <h2>Get in touch</h2>
+            <p>If you have questions about buying, selling, or renting, we're ready to help.</p>
+          </div>
+        
+          <div className="contactInfo">
+            <MapPin className="icon" size={50}/>
             <div>
               <h3>Head Office</h3>
               <p>123 Property Lane, New York, USA</p>
             </div>
           </div>
 
-          <div className="contact-item">
-            <Mail className="icon" />
+          <div className="contactInfo">
+            <Mail className="icon" size={50}/>
             <div>
               <h3>Email Us</h3>
               <p>info@realestateco.com</p>
             </div>
           </div>
 
-          <div className="contact-item">
-            <Phone className="icon" />
+          <div className="contactInfo">
+            <Phone className="icon" size={50}/>
             <div>
               <h3>Call Us</h3>
               <p>+1 555 123 4567</p>
@@ -86,16 +85,17 @@ export default function ContactPage() {
           <div className="socials">
             <h3>Follow us</h3>
             <div className="social-icons">
-              <Globe />
-              <Facebook />
-              <Instagram />
-              <Twitter />
+              <a href=""> <Globe size={30}/></a>
+              <a href=""> <Facebook size={30}/></a>
+              <a href=""><Instagram size={30}/></a>
+              <a href=""><Twitter size={30}/></a>
             </div>
           </div>
         </div>
+   
 
         {/* FORM */}
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contactForm" onSubmit={handleSubmit}>
           <div className="two-col">
             <input name="name" value={form.name} onChange={handleChange} placeholder="Name" required />
             <input name="company" value={form.company} onChange={handleChange} placeholder="Company" />

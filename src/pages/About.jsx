@@ -5,20 +5,21 @@ import bg3 from '../assets/bg3.jpg'
 const About = () => {
   return (
     <div className="about-wrapper">
-      <div className="listings-wrapper">
-        <h1>About US</h1>
+      <div className="AboutHero">
+        <h1 >About US</h1>
       </div>
-      {/* WHO WE ARE + IMAGE */}
+      
+
       <section className="about-section">
         <div className="about-left">
-          <button className="tag">Who We Are</button>
+          <button className="tagSpan">Who We Are</button>
           <p>
-            UptownPro Homes Ltd is committed to delivering premium real estate
+            UrbanHaven Homes is committed to delivering premium real estate
             services, offering our clients trusted investment opportunities
             across prime locations.
           </p>
 
-          <button className="tag">Our Mission</button>
+          <button className="tagSpan">Our Mission</button>
           <p>
             To make property ownership seamless by providing transparent,
             innovative, and customer-first solutions that build wealth and
@@ -35,7 +36,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* VISION + IMAGE + VALUES */}
+      
       <section className="about-section reverse">
         <div className="about-right">
           <img
@@ -46,14 +47,14 @@ const About = () => {
         </div>
 
         <div className="about-left">
-          <button className="tag">Our Vision</button>
+          <button className="tagSpan">Our Vision</button>
           <p>
             To be the most trusted real estate partner in Africa, known for
             transforming lives through innovative housing solutions and
             sustainable communities.
           </p>
 
-          <button className="tag">Our Values</button>
+          <button className="tagSpan">Our Values</button>
           <ul className="values-list">
             <li><strong>Integrity –</strong> We uphold honesty and transparency in every transaction.</li>
             <li><strong>Excellence –</strong> We strive for superior quality in our projects.</li>
@@ -69,7 +70,7 @@ const About = () => {
         <div className="md-card">
           <img src={bg3} alt="Managing Director" className="md-img" />
           <div className="md-tag">
-            <p>Dr. Daniel Alexander</p>
+            <p>Dr. Hisaac Brown</p>
             <span>Managing Director</span>
           </div>
         </div>

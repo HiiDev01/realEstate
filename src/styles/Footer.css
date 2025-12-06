@@ -1,5 +1,5 @@
 .footer {
-  background: #47002c; /* deep purple */
+  background: var(  --secondary-color); /* deep purple */
   color: #fff;
   padding: 60px 20px 20px;
   font-family: "Inter", sans-serif;
@@ -40,12 +40,15 @@
   border-radius: 6px;
   border: none;
   outline: none;
-  background: #5c0040;
-  color: #fff;
+  background: var(--background-light);
+  color: var(--text-color);
+  font-size: 0.9rem;
+  font-family: var(--font-two);
 }
 
 .footer-input::placeholder {
-  color: #c7c7c7;
+  color: var(--text-light);
+  font-size: 1rem;
 }
 
 /* BUTTON */
@@ -67,7 +70,7 @@
 .footer-bottom {
   max-width: 1300px;
   margin: 30px auto 10px;
-  border-top: 1px solid #5e0045;
+  border-top: 1px solid var(--background-light);
   padding-top: 15px;
 
   display: flex;
@@ -90,12 +93,63 @@
 @media (max-width: 900px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .footer-col h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 0.85rem;
+  }
+
+  .footer-input {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .footer-btn {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .footer-social {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-col h3 {
+    font-size: 1rem;
+  }
+
+  .footer-col p,
+  .footer-col a {
+    font-size: 0.8rem;
+  }
+
+  .footer-input,
+  .footer-btn {
+    font-size: 0.8rem;
+    padding: 8px;
   }
 }
 

@@ -11,8 +11,7 @@ export default function ListingFilter({ onFilter }) {
 
   return (
     <div className="listings-wrapper">
-      <h1 className="title">Our Listings</h1>
-      <p className="subtitle"> 1,300+ Available Properties</p>
+
 
       <div className="search-container">
         <select

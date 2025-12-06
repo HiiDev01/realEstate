@@ -42,9 +42,14 @@ const BlogDetail = () => {
 
   return (
     <div className="blog-detail-container">
-      <Link to="/" className="back-link">← Back to blogs</Link>
 
-      <img src={blog.featured_image} alt={blog.title} className="detail-img" />
+      <div className="sgblognav">
+        <Link to="/" className="back-link">Home</Link>/
+        <Link to="/blog" className="back-link">Blog</Link>/
+        <p>{blog.title}</p>
+      </div>
+
+      <img src={blog.images[0]} alt={blog.title} className="detail-img" />
 
       <h1 className="detail-title">{blog.title}</h1>
 
@@ -55,9 +60,11 @@ const BlogDetail = () => {
       </div>
 
       <div className="detail-content">
-        {blog.content.split("\n").map((p, i) => (
-          <p key={i}>{p}</p>
-        ))}
+        {blog.content.map((section, i) =>
+          section.split("\n").map((line, j) => (
+            <p key={`${i}-${j}`}>{line}</p>
+          ))
+        )}
       </div>
 
       <div className="detail-tags">
